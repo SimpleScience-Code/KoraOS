@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div style="border: solid; width: fit-content; border-radius: 8px; padding: 8px; position:absolute; top:50% left:50%; transform">
+    <body style="background-color: #000000ce; color: #FFFFFF; font-family: Arial, sans-serif; padding: 20px;">
+    <h1 style="margin:4px;">Welcome to my OS!!!</h1>
+    <h2 style="margin:8px;">My name is KoraOS</h2>
+    <p style="margin: 4px;">Hello, World!</p>
+        <img src="sprite1.jpg" width="1300" height="320"; object-fit: cover;>
+            <strong><a href="https://stardance.hackclub.com/projects/34484"><br>Main project, Check it out!</a></strong>
+            <br><strong>Also check out my other projects! Which is.............. This! KoraOS!!</strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>          
+    </body>
+</html>
