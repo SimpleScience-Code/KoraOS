@@ -1,36 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>KoraOS</title>
+
+<link rel="stylesheet" href="KoraOS.css">
+
+</head>
 
 <body>
-    <div style="border: solid; width: fit-content; border-radius: 8px; padding: 8px; position:absolute; top:50% left:50%; transform">
-    <body style="background-color: #000000ce; color: #FFFFFF; font-family: Arial, sans-serif; padding: 20px;">
-    <h1 style="margin:4px;">Welcome to my OS!!!</h1>
-    <h2 style="margin:8px;">My name is KoraOS</h2>
-    <p style="margin: 4px;">Hello, World!</p>
-        <img src="sprite1.jpg" width="1300" height="320"; object-fit: cover;>
-            <strong><a href="https://stardance.hackclub.com/projects/34484"><br>Main project, Check it out!</a></strong>
-            <br><strong>Also check out my other projects! Which is.............. This! KoraOS!!</strong>
+
+
+<div id="desktop">
+
+
+    <div class="desktopIcon"
+         ondblclick="openWindow('notes')">
+
+        <img src="notes.png">
+
+        <p>Notes</p>
+
+    </div>
 
 
 
+    <div class="desktopIcon"
+         ondblclick="openWindow('calculator')">
+
+        <img src="calculator.png">
+
+        <p>Calculator</p>
+
+    </div>
 
 
 
+    <div class="desktopIcon"
+         ondblclick="openWindow('cookie')">
+
+        <img src="cookie.png">
+
+        <p>Cookie Clicker</p>
+
+    </div>
 
 
+    <div
+    class="window"
+    id="notesWindow">
+
+        <div class="windowHeader">
+
+            <span> Notes</span>
+
+            <button
+            onclick="closeWindow('notes')">
+
+            ✕
+
+            </button>
+
+        </div>
+
+        <div class="windowContent">
+
+            <h2>
+
+                Welcome to KoraOS
+
+            </h2>
+
+            <textarea
+            placeholder="Write something..."></textarea>
+
+        </div>
+
+    </div>
 
 
+    <div
+    class="window"
+    id="calculatorWindow">
+
+        <div class="windowHeader">
+
+            <span>
+
+                 Calculator
+
+            </span>
+
+            <button
+            onclick="closeWindow('calculator')">
+
+            ✕
+
+            </button>
+
+        </div>
+
+        <div class="windowContent">
+
+            <input
+            id="calcDisplay"
+            readonly>
+
+            <div class="calcButtons">
+
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button onclick="press('/')">÷</button>
+
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button onclick="press('*')">×</button>
+
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button onclick="press('-')">−</button>
+
+                <button onclick="press('0')">0</button>
+                <button onclick="press('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="press('+')">+</button>
+
+                <button
+                onclick="clearCalc()">
+
+                C
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
+    <div
+    class="window"
+    id="cookieWindow">
+
+        <div class="windowHeader">
+
+            <span>
+
+                Cookie Clicker
+
+            </span>
+
+            <button
+            onclick="closeWindow('cookie')">
+
+            ✕
+
+            </button>
+
+        </div>
+
+        <div class="windowContent">
+
+            <h1>
+
+                 Cookie Clicker
+
+            </h1>
+
+            <br>
+
+            <h2 id="cookieCount">
+
+                Cookies: 0
+
+            </h2>
+
+            <br>
+
+            <button
+            id="cookieButton">
+
+                🍪
+
+            </button>
+
+            <br><br>
+
+            <h3
+            id="cookiePower">
+
+                Cookies Per Click: 1
+
+            </h3>
+
+            <br>
+
+            <button
+            id="cookieUpgrade">
+
+                Upgrade
+
+                <br>
+
+                Cost: 10
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
 
+<div id="taskbar">
 
+    <button
+    id="startButton">
 
+        KoraOS
 
+    </button>
 
+    <div
+    id="runningApps">
 
+    </div>
 
+    <div
+    id="clock">
 
-    </div>          
-    </body>
+        00:00
+
+    </div>
+
+</div>
+
+<script src="KoraOS.js"></script>
+
+</body>
+
 </html>
