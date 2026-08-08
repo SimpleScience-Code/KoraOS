@@ -24,8 +24,8 @@ html,body{
     background:
     linear-gradient(
         135deg,
-        #0f172a,
-        #1e293b,
+        #000000,
+        #3f5983,
         #2563eb
     );
 
@@ -94,9 +94,9 @@ html,body{
 
     top:90px;
 
-    width:520px;
+    width:290px;
 
-    height:420px;
+    height: 500px;
 
     background:#202124;
 
