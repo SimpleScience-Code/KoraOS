@@ -271,7 +271,7 @@ function resetCookies(){
 
         clickPower = 1;
 
-        upgradeCost = 10;
+        upgradeCost = 5;
 
         saveCookieGame();
 
