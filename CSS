@@ -83,7 +83,7 @@ html,body{
 
 }
 
-
+/* All windows */
 .window{
 
     display:none;
@@ -94,7 +94,7 @@ html,body{
 
     top:90px;
 
-    width:290px;
+    width: 600px;
 
     height: 500px;
 
@@ -153,7 +153,7 @@ html,body{
 
 }
 
-
+/* notes, i think? */
 textarea{
 
     width:100%;
@@ -177,7 +177,7 @@ textarea{
 }
 
 
-
+/* Calculator */
 #calcDisplay{
 
     width:100%;
@@ -204,7 +204,7 @@ textarea{
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:8px;
+    gap:12px;
 
 }
 
@@ -296,7 +296,7 @@ textarea{
 
 }
 
-
+/* Taskbar */
 
 #taskbar{
 
@@ -353,7 +353,7 @@ textarea{
     gap:8px;
 
 }
-
+/* taskbar */
 .taskbarApp{
 
     padding:6px 14px;
