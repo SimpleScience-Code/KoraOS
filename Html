@@ -19,7 +19,18 @@ content="width=device-width, initial-scale=1.0">
 
 <div id="desktop">
 
+<!-- About Me -->
+    <div class="desktopIcon"
+         ondblclick="openWindow('aboutme')">
 
+        <img src="notes.png">
+
+        <p>About Me</p>
+
+    </div>
+    
+    
+    <!-- notes -->
     <div class="desktopIcon"
          ondblclick="openWindow('notes')">
 
@@ -30,7 +41,7 @@ content="width=device-width, initial-scale=1.0">
     </div>
 
 
-
+<!-- calculator -->
     <div class="desktopIcon"
          ondblclick="openWindow('calculator')">
 
@@ -41,7 +52,7 @@ content="width=device-width, initial-scale=1.0">
     </div>
 
 
-
+<!-- Cookie Clicker -->
     <div class="desktopIcon"
          ondblclick="openWindow('cookie')">
 
@@ -51,7 +62,7 @@ content="width=device-width, initial-scale=1.0">
 
     </div>
 
-
+<!-- Notes app, copied the same code to about me page. -->
     <div
     class="window"
     id="notesWindow">
@@ -84,7 +95,46 @@ content="width=device-width, initial-scale=1.0">
 
     </div>
 
+<!--About Me Page, 
+    new thingy havent decided yet, 16:26: About me, decided it. -->
+    <div
+    class="window"
+    id="aboutmeWindow">
 
+        <div class="windowHeader">  
+
+            <span>
+                
+                 About Me 
+            
+            </span>
+
+            <button
+            onclick="closeWindow('aboutme')">
+
+            ✕
+
+            </button>
+
+        </div>
+
+        <div class="windowContent">
+
+            <h2>
+
+                Welcome to KoraOS
+                <p><b>About Me:</b> I your below average joe software developer, who used to rely heavily on AI for coding, so this time, atleast for this "About Me Page" I'm  gonna complete it without any AI, so no asking chatgpt for the code, just me, this mission, and my creativity, as for the next and upcoming project/s, which will mostly be hardware, since I have a keen interest in the field. But if I ever try software again ill make sure to not use AI and actually learn the stuff I was supposed to before I started, So wish me best of luck, DM me on Slack to roast me or give advice(@SimplifCoder), and remember to always stay curious. Toodle ON!.  </p>
+        
+            </h2>
+        </div>    
+
+    </div>
+
+
+</div>
+
+
+<!-- calculator -->
     <div
     class="window"
     id="calculatorWindow">
@@ -147,7 +197,7 @@ content="width=device-width, initial-scale=1.0">
 
     </div>
 
-
+<!-- cookie clicker -->
     <div
     class="window"
     id="cookieWindow">
@@ -156,7 +206,7 @@ content="width=device-width, initial-scale=1.0">
 
             <span>
 
-                Cookie Clicker
+                 Cookie Clicker
 
             </span>
 
@@ -220,8 +270,7 @@ content="width=device-width, initial-scale=1.0">
 
     </div>
 
-</div>
-
+    
 
 <div id="taskbar">
 
