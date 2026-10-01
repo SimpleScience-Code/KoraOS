@@ -4,6 +4,8 @@ let highestZ = 100;
 
 const clock = document.getElementById("clock");
 
+// const remember to add next time something new come to my head.// 
+const aboutmeWindow = document.getElementById("aboutmeWindow");
 const notesWindow = document.getElementById("notesWindow");
 const calculatorWindow = document.getElementById("calculatorWindow");
 const cookieWindow = document.getElementById("cookieWindow");
@@ -34,6 +36,11 @@ function openWindow(app) {
 
     switch (app) {
 
+        case "aboutme":
+            aboutmeWindow.style.display = "block";
+            bringToFront(aboutmeWindow);
+            break;
+
         case "notes":
             notesWindow.style.display = "block";
             bringToFront(notesWindow);
@@ -56,6 +63,10 @@ function openWindow(app) {
 function closeWindow(app) {
 
     switch (app) {
+
+         case "aboutme":
+            notesWindow.style.display = "none";
+            break;
 
         case "notes":
             notesWindow.style.display = "none";
@@ -231,7 +242,7 @@ function clickCookie(){
     updateCookieUI();
 
 }
-
+// pookie upgrade cookies function, added 2024-06-05 16:30:00
 function upgradeCookie(){
 
     if(cookies < upgradeCost){
@@ -250,7 +261,7 @@ function upgradeCookie(){
 
     upgradeCost =
     Math.floor(
-        upgradeCost * 1.8
+        upgradeCost * 1.5
     );
 
     saveCookieGame();
@@ -258,7 +269,7 @@ function upgradeCookie(){
     updateCookieUI();
 
 }
-
+// pookie reset cookies function, added 2024-06-05 16:30:00
 function resetCookies(){
 
     if(
@@ -296,3 +307,52 @@ if(cookieUpgrade){
 }
 
 updateCookieUI();
+
+/* CALCULATOR*/
+
+const calcDisplay =
+document.getElementById("calcDisplay");
+
+let calcExpression = "";
+
+function press(value) {
+
+    calcExpression += value;
+
+    calcDisplay.value =
+    calcExpression;
+
+}
+
+function calculate() {
+
+    if (calcExpression === "") {
+        return;
+    }
+
+    try {
+
+        calcExpression =
+        eval(calcExpression).toString();
+
+        calcDisplay.value =
+        calcExpression;
+
+    } catch {
+
+        calcDisplay.value =
+        "Error";
+
+        calcExpression = "";
+
+    }
+
+}
+
+function clearCalc() {
+
+    calcExpression = "";
+
+    calcDisplay.value = "";
+
+}
