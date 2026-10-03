@@ -36,6 +36,11 @@ function openWindow(app) {
 
     switch (app) {
 
+        case "paint":
+            paintWindow.style.display = "block";
+            bringToFront(paintWindow);
+            break;
+
         case "aboutme":
             aboutmeWindow.style.display = "block";
             bringToFront(aboutmeWindow);
@@ -64,7 +69,13 @@ function closeWindow(app) {
 
     switch (app) {
 
+        case "paint":
+            notesWindow.style.display = "none";
+            break;
+// closes the notes window insted of the paint window(Intentional).
          case "aboutme":
+            // It has noteswindow, instead of aboutmewindow
+            // ↓
             notesWindow.style.display = "none";
             break;
 
