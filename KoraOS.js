@@ -260,7 +260,7 @@ function upgradeCookie(){
     if(cookies < upgradeCost){
 
         alert(
-        "Not enough cookies!"
+        "Not enough cookies, son.🥀🥀🥀"
         );
 
         return;
