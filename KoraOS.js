@@ -71,7 +71,7 @@ function closeWindow(app) {
     switch (app) {
 
         case "paint":
-            notesWindow.style.display = "none";
+            paintWindow.style.display = "none";
             break;
 // closes the notes window insted of the paint window(Intentional).
          case "aboutme":
