@@ -9,6 +9,7 @@ const aboutmeWindow = document.getElementById("aboutmeWindow");
 const notesWindow = document.getElementById("notesWindow");
 const calculatorWindow = document.getElementById("calculatorWindow");
 const cookieWindow = document.getElementById("cookieWindow");
+const paintWindow = document.getElementById("paintWindow");
 
 const windows = document.querySelectorAll(".window");
 
